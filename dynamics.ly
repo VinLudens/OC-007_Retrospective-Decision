@@ -24,8 +24,8 @@ dynamics = {
   s1\p | s1 | s1 | s1 | s1 | s1 | 
   s2. \rall s8 s8\! |
   s1\> |
-  s2.\pp s8 s8_"a tempo" | s1 | 
-  s1\mp | s1 | s1 | s1 | s1 | 
+  s2.\pp s8 s8-\tweak whiteout #3 _"a tempo" | s1 | 
+  s1-\tweak X-offset #-0.5 -\mp | s1 | s1 | s1 | s1 | 
   s4 s2.\< |
   s1\! | s1 | s1 |
   s1\p | s1 | s1 | s1 | s1 | 
@@ -44,11 +44,11 @@ dynamics = {
   s1\f | s1 | 
   s1\cresc |
   s2 s2\! |
-  s1\mp | s1 | s1 | 
+  s1-\tweak X-offset #-0.25 -\mp | s1 | s1 | 
   s1\crpoco |
   s1 |
-  s1\fp | s1 | s1 | 
-  s1\mp | s1 | s1 | s1 | s1 | s1 | s1 | s1 | s1 | s1 | 
+  s1-\tweak X-offset #-0.0 -\fp | s1 | s1 | 
+  s1-\tweak X-offset #-0.4 -\mp | s1 | s1 | s1 | s1 | s1 | s1 | s1 | s1 | s1 | 
   s1\rall |
   s1\p |
   s1\pp | s1 | 

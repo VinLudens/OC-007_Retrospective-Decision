@@ -67,8 +67,8 @@ right = \relative c''''' {
   <dis' gis b>8 b <dis gis b>8 b <dis gis b>8 b <dis gis b>8 b |
   <gis' b dis>8 dis <gis b dis>8 dis <gis b dis>8 dis <gis b dis>8 dis ~ |
   
-  
-  <dis gis b dis>1~ \fermata  |
+  \once\override Score.Tie.layer = #-2
+  <dis gis b dis>1~ \fermata  | \once\override Score.TimeSignature.layer = #-1 \once\override Score.TimeSignature.whiteout = #3.5
   \time 6/4
   << { \voiceOne 
       <dis dis'>1 r2 |
@@ -236,7 +236,7 @@ right = \relative c''''' {
       <gis cis>16 <gis cis> s <gis cis> <gis cis> s s8 s2 |
     }
   >> \oneVoice
-  <e cis' e>2 ~ <e cis' e>8 r8 r4 |
+  <e cis' e>2 ~ <e cis' e>8 \ottava 0 r8 r4 |
   
   \bar "|."
 
